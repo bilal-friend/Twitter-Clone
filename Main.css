@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+:root {
+  font-size: 15px;
+}
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.image {
+  background: url("images/cover-img.png");
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57vw;
+}
+.image .big-bird {
+  fill: white;
+  width: 55%;
+  max-height: 380px;
+}
+.content {
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+}
+.content .small-bird {
+  fill: rgb(29, 155, 240);
+  width: 50px;
+  margin-bottom: 3rem;
+}
+.content h1 {
+  margin: 48px 0;
+  line-height: 84px;
+  font-size: 64px;
+  font-weight: 900;
+}
+.content h3 {
+  font-size: 31px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+.btn {
+  width: 300px;
+  padding: 0 16px;
+  height: 40px;
+  border: rgb(207, 217, 222) 1px solid;
+  outline: none;
+  background: transparent;
+  border-radius: 2rem;
+  transition: 0.2s;
+  margin-bottom: 1.5rem;
+}
+.btn:hover {
+  background: rgb(230, 230, 230);
+}
+.btn a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-apple i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.btn-signup-n {
+  background: rgb(29, 155, 240);
+  border: none;
+}
+.btn-signup-n:hover {
+  background: rgb(26, 140, 216);
+}
+.btn-signup-n a {
+  color: white;
+}
+.or {
+  margin: 1.2rem 0;
+  position: relative;
+  width: 300px;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 1rem;
+
+  color: black;
+}
+.or::before {
+  content: "";
+  width: 130px;
+  height: 2px;
+  transform: translateY(50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: rgb(239, 243, 244);
+}
+.or::after {
+  content: "";
+  width: 130px;
+  height: 2px;
+  transform: translateY(50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: rgb(239, 243, 244);
+}
+small {
+  width: 300px;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+}
+small a {
+  color: rgb(29, 155, 240);
+}
+.content .already {
+  font-weight: 800;
+  margin-top: 2.5em;
+  margin-bottom: 1rem;
+}
+.btn-signup a {
+  color: #1d98f0;
+}
+.btn-signup:hover {
+  background: rgba(29, 155, 240, 0.1);
+}
+footer {
+  text-align: center;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  margin: 8px;
+  color: #536471;
+  font-size: 0.8rem;
+}
+nav a:hover {
+  text-decoration: underline #536471;
+}
+nav {
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .image {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .content {
+    margin: auto;
+    padding: 16px;
+    width: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  .content h1 {
+    font-size: 40px;
+    margin: 40px 0;
+    line-height: 52px;
+    overflow-wrap: break-word;
+    letter-spacing: -0.8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+  }
+  .content h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .content .small-bird {
+    margin-bottom: 0;
+  }
+  .btn-apple {
+    margin-bottom: 0;
+  }
+}
