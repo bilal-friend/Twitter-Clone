@@ -3,90 +3,625 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="shortcut icon"
       href="images/icons8-twitter-100.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="Main.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="Main2.Css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter</title>
   </head>
   <body>
-    <div class="container">
-      <div class="image">
-        <svg
-          class="big-bird"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          class="r-jwli3a r-4qtqp9 r-yyyyoo r-labphf r-1777fci r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr"
+    <header>
+      <div class="nav_links">
+        <span href="#" class="logo">
+          <img src="images/icons8-twitter.gif" alt=""
+        /></span>
+        <a href="#" class="active">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"
+          >
+            <g>
+              <path
+                d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z"
+              ></path>
+            </g>
+          </svg>
+          <span>Home</span>
+        </a>
+        <a href="#" class="mcha">
+          <i class="material-symbols-outlined mcha">tag</i>
+          <span>Explore</span></a
         >
-          <g>
-            <path
-              d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
-            ></path>
-          </g>
-        </svg>
-      </div>
-      <div class="content">
-        <svg
-          class="small-bird"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          class="r-jwli3a r-4qtqp9 r-yyyyoo r-labphf r-1777fci r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr"
+        <a href="#" class="bka">
+          <i class="material-symbols-outlined bka"> search </i>
+          <span>Notifications</span></a
         >
-          <g>
-            <path
-              d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
-            ></path>
-          </g>
-        </svg>
-        <h1>Happening now</h1>
-        <h3>join Twitter today.</h3>
-        <button class="btn btn-apple">
-          <a href="#"
-            ><i class="fa-brands fa-apple"></i><span>Sign Up with Apple</span>
-          </a>
+        <a href="#">
+          <i class="material-symbols-outlined"> notifications </i>
+          <span>Notifications</span></a
+        >
+
+        <a href="#"
+          ><i class="material-symbols-outlined"> mail </i><span>Messages</span>
+        </a>
+        <a href="#" class="mcha">
+          <i class="material-symbols-outlined mcha"> bookmark </i>
+          <span>Bookmarks</span></a
+        >
+        <a href="#" class="mcha">
+          <i class="material-symbols-outlined mcha"> featured_play_list </i>
+          <span>Lists</span></a
+        >
+        <a href="#" class="mcha">
+          <i class="material-symbols-outlined mcha"> person </i>
+          <span>Profile</span></a
+        >
+        <a href="#" class="mcha">
+          <i class="material-symbols-outlined mcha"> more </i>
+          <span>More</span></a
+        >
+
+        <button class="tweet-button">
+          <a href="Index-signup.html">
+            <span>Tweet</span>
+            <i class="material-symbols-outlined"> history_edu </i></a
+          >
         </button>
-        <div class="or">
-          <span>or</span>
+      </div>
+      <div class="main_account">
+        <a href="#">
+          <img src="images/profile-pic.png" />
+          <div>
+            <span class="account-name">Bilal Islam</span>
+            <span class="account-handle">@codezilla_</span>
+          </div>
+          <i class="material-symbols-outlined"> more_horiz </i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-flex">
+        <div class="main-feed">
+          <div class="home-bar">
+            <span>Home</span>
+            <i class="material-symbols-outlined backhover"> auto_awesome </i>
+          </div>
+          <div class="tweet-box">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="new-tweet-dettails">
+              <input type="text" placeholder="What's happening?" />
+              <div class="new-tweet-actions">
+                <ul>
+                  <li><i class="material-symbols-outlined"> image </i></li>
+                  <li><i class="material-symbols-outlined"> gif_box </i></li>
+                  <li><i class="material-symbols-outlined"> poll </i></li>
+                  <li>
+                    <i class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </i>
+                  </li>
+                  <li>
+                    <i class="material-symbols-outlined"> event </i>
+                  </li>
+                </ul>
+                <button class="tweet-button">
+                  <a href="Index-signup.html"> Tweet</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <img src="images/Arlan_Hamilton.webp" alt="" />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Bilal .</p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Bilal , and I love programming</p>
+                <img
+                  src="images/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.webp"
+                />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Islam , I am a pro gamer .</p>
+                <img
+                  src="images/_124986241_gettyimages-1310145791.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Bilal .</p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “We cannot solve problems with the kind of thinking we
+                  employed when we came up with them.” — Albert Einstein
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Ahmad , it's was a beautifull morning .</p>
+                <img src="images/Benefits of cycling.webp" alt="" />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  "Success is not final; failure is not fatal: It is the courage
+                  to continue that counts." — Winston S. Churchill
+                  <img
+                    src="images/Fearless_Motivational_Quote_Desktop_Wallpaper_1.webp"
+                    alt=""
+                  />
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “Teamwork is the ability to work together toward a common
+                  vision. The ability to direct individual accomplishments
+                  toward organizational objectives. It is the fuel that allows
+                  common people to attain uncommon results.” — Andrew Carnegie
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “Work until your bank account looks like a phone number.” —
+                  Unknown
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “People say nothing is impossible, but I do nothing every
+                  day.” — Winnie the Pooh “Life is like a sewer… what you get
+                  out of it depends on what you put into it.” — Tom Lehrer
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “I always wanted to be somebody, but now I realise I should
+                  have been more specific.” — Lily Tomlin
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <img src="images/Zig_Ziglar.webp" alt="" />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>
+                  “Coming together is a beginning. Keeping together is progress.
+                  Working together is success.” — Henry Ford
+                </p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>No pain No gain.</p>
+                <img src="images/91740413.webp" alt="" />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <img src="images/Nelsson_Mandela.webp" alt="" />
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-tweet">
+            <img class="tweet_img" src="images/profile-pic.png" />
+            <div class="feed-tweet-dettails">
+              <div class="tweeter-dettails">
+                <div>
+                  <a href="#" class="tweeter-name">Bilal Islam</a>
+                  <span class="Tweeter-handle">@codezilla_ &#8226; 3h </span>
+                </div>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <div class="tweet-content">
+                <p>Hi, My name is Bilal .</p>
+              </div>
+              <div class="tweet-icons">
+                <i class="material-symbols-outlined"> chat_bubble_outline </i>
+                <i class="material-symbols-outlined"> restart_alt </i>
+                <i class="material-symbols-outlined favorite">
+                  favorite_border
+                </i>
+                <i class="material-symbols-outlined"> upload </i>
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-signup-n">
-          <a href="#">Sign up with phone or email</a>
-        </button>
-        <small
-          >By signing up, you agree to the <a href="#"> Terms of Service</a> and
-          <a href="#">Privacy Policy</a>, including
-          <a href=""> Cookie Use.</a></small
-        >
-        <p class="already">Already have an account ?</p>
-        <button class="btn btn-signup"><a href="#">Sign in</a></button>
+        <div class="side-feed">
+          <div class="search">
+            <div>
+              <i class="material-symbols-outlined">search</i>
+              <input type="text" placeholder="Search Twitter" />
+            </div>
+          </div>
+          <div class="trending">
+            <h1 class="h1-title">Trends for you</h1>
+
+            <div class="trending-item">
+              <div class="item-category">
+                <p>Trending in Morocoo</p>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <p>Condezilla</p>
+              <span>100K tweets</span>
+            </div>
+            <div class="trending-item">
+              <div class="item-category">
+                <p>Trending in Morocoo</p>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <p>Condezilla</p>
+              <span>100K tweets</span>
+            </div>
+            <div class="trending-item">
+              <div class="item-category">
+                <p>Trending in Morocoo</p>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <p>Condezilla</p>
+              <span>100K tweets</span>
+            </div>
+            <div class="trending-item">
+              <div class="item-category">
+                <p>Trending in Morocoo</p>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <p>Condezilla</p>
+              <span>100K tweets</span>
+            </div>
+            <div class="trending-item">
+              <div class="item-category">
+                <p>Trending in Morocoo</p>
+                <i class="material-symbols-outlined backhover">more_horiz</i>
+              </div>
+              <p>Condezilla</p>
+              <span>100K tweets</span>
+            </div>
+            <a href="#" class="show-more">Show More</a>
+          </div>
+          <div class="follow">
+            <h1 class="h1-title">Who to follow</h1>
+            <div class="follow-profile">
+              <img class="tweet_img" src="images/profile-pic.png" />
+              <div class="follow-dettails">
+                <a href="#"> Islam Bilal </a>
+                <span>codezilla_</span>
+              </div>
+              <button>follow</button>
+            </div>
+            <div class="follow-profile">
+              <img class="tweet_img" src="images/profile-pic.png" />
+              <div class="follow-dettails">
+                <a href="#"> Islam Bilal </a>
+                <span>codezilla_</span>
+              </div>
+              <button>follow</button>
+            </div>
+            <a href="#" class="show-more">Show More</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <footer>
-      <nav>
-        <a href="#"> About </a>
-        <a href="#"> Help Center </a>
-        <a href="#"> Terms of Service </a>
-        <a href="#"> Privacy Policy </a>
-        <a href="#"> Cookie Policy </a>
-        <a href="#"> Cookie Policy</a>
-        <a href="#"> Accessibility</a>
-        <a href="#"> Ads info </a>
-        <a href="#"> Blog</a>
-        <a href="#"> Status</a>
-        <a href="#"> Careers</a>
-        <a href="#"> Brand Resources</a>
-        <a href="#"> Advertising</a>
-        <a href="#"> Marketing</a>
-        <a href="#"> Twitter for Business</a>
-        <a href="#"> Developers</a>
-        <a href="#"> Directory</a>
-        <a href="#"> Settings</a>
-      </nav>
-      <p>&copy;2022 Twitter,Inc</p>
-    </footer>
+    </main>
   </body>
 </html>

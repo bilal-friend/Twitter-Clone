@@ -45,6 +45,9 @@ body {
   width: 50px;
   margin-bottom: 3rem;
 }
+.content a {
+  color: rebeccapurple;
+}
 .content h1 {
   margin: 48px 0;
   line-height: 84px;
